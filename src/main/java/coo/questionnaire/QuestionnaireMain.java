@@ -5,7 +5,7 @@ import java.io.IOException;
 public class QuestionnaireMain {
     public static void main(String[] args) {
         QuestionnaireFactory factory = new QuestionnaireFactory();
-        String file = "question_tolkien.txt";
+        String file = "questionnairetest.txt";
 
         if (args.length > 1)
             file = args[0];
