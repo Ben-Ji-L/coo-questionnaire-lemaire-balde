@@ -1,3 +1,6 @@
 Combien d'UE avons nous en L3 info ?
 6
 1
+Frodo est un Hobbit ?
+oui
+3
