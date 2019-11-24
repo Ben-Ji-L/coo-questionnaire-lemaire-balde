@@ -25,18 +25,4 @@ public class Input {
     public static int readInt() throws IOException {
         return scanner.nextInt();
     }
-
-    public static void main(String[] args) {
-        try {
-            System.out.print(" chaine : ? ");
-            String chaineLue = readString();
-            System.out.println("lue  => " + chaineLue);
-            System.out.print(" int : ? ");
-            int intLu = readInt();
-            System.out.println("lue  => " + intLu);
-        } catch (IOException var3) {
-        }
-
-    }
-
 }
