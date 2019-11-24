@@ -1,5 +1,8 @@
 package coo.questionnaire;
 
+import coo.questionnaire.gui.AnswerPanel;
+import coo.questionnaire.gui.NumericalAnswerPanel;
+
 public class NumericalAnswer extends Answer<Integer> {
 
     public NumericalAnswer(Integer theGoodAnswer) {
@@ -23,4 +26,8 @@ public class NumericalAnswer extends Answer<Integer> {
         return "nombre";
     }
 
+    @Override
+    public AnswerPanel createMyAnswerPanel() {
+        return new NumericalAnswerPanel(this);
+    }
 }

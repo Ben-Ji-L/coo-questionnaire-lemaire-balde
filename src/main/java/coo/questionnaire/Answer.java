@@ -1,5 +1,7 @@
 package coo.questionnaire;
 
+import coo.questionnaire.gui.AnswerPanel;
+
 public abstract class Answer<T> {
     protected T value;
 
@@ -23,5 +25,5 @@ public abstract class Answer<T> {
         return this.value.toString();
     }
 
-    // public abstract AnswerPanel createMyAnswerPanel();
+    public abstract AnswerPanel createMyAnswerPanel();
 }
