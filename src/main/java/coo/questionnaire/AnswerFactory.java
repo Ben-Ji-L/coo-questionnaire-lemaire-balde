@@ -5,10 +5,22 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
+/**
+ * Class will produce answer when needed.
+ */
 public class AnswerFactory {
 
+    /**
+     * Singleton attribute: the only instance of the factory allowed.
+     */
     public static final AnswerFactory FACTORY = new AnswerFactory();
 
+    /**
+     * Create a new answer whith the good type.
+     *
+     * @param answer the string of the answer
+     * @return the answer of the good type
+     */
     public Answer<?> buildAnswer(String answer) {
         if (new NumericalAnswer(1).accept(answer)) {
             return new NumericalAnswer(new Integer(answer));
@@ -17,7 +29,7 @@ public class AnswerFactory {
         } else if (answer.indexOf(59) != -1) {
             return this.buildMultiAnswer(answer);
         } else {
-            return (Answer)(answer.indexOf(124) != -1 ? this.buildMultipleChoice(answer) : new TextAnswer(answer));
+            return (Answer) (answer.indexOf(124) != -1 ? this.buildMultipleChoice(answer) : new TextAnswer(answer));
         }
     }
 
@@ -26,7 +38,7 @@ public class AnswerFactory {
         Scanner sc = (new Scanner(answer)).useDelimiter(Pattern.compile("\\|"));
         String rightAnswer = sc.next().trim();
 
-        while(sc.hasNext()) {
+        while (sc.hasNext()) {
             choices.add(sc.next().trim());
         }
 
@@ -38,7 +50,7 @@ public class AnswerFactory {
         List<String> answers = new LinkedList();
         Scanner sc = (new Scanner(answer)).useDelimiter("\\s;\\s");
 
-        while(sc.hasNext()) {
+        while (sc.hasNext()) {
             answers.add(sc.next().trim());
         }
 
