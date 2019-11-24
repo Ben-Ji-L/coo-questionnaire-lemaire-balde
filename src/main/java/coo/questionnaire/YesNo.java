@@ -1,10 +1,9 @@
 package coo.questionnaire;
 
 public enum YesNo {
+    oui,
+    non;
 
-    YES("yes"),
-    NO("no");
-
-    YesNo(String yes) {
+    private YesNo() {
     }
 }
