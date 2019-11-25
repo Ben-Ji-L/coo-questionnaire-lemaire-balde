@@ -1,14 +1,22 @@
 package coo.questionnaire.gui;
 
+import coo.questionnaire.NumericalAnswer;
+
 import javax.swing.*;
 import java.awt.*;
 
-import coo.questionnaire.*;
-
-public class NumericalAnswerPanel extends AnswerPanel{
+/**
+ * A class for the panel of the numerical answer.
+ */
+public class NumericalAnswerPanel extends AnswerPanel {
 
     private JSpinner spinner;
 
+    /**
+     * Create a new panel.
+     *
+     * @param answer the answer who need a panel
+     */
     public NumericalAnswerPanel(NumericalAnswer answer) {
         super(answer);
     }
@@ -22,6 +30,7 @@ public class NumericalAnswerPanel extends AnswerPanel{
         return result;
     }
 
+    @Override
     public String getAnswerText() {
         return this.spinner.getValue().toString();
     }

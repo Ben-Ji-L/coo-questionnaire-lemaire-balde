@@ -5,9 +5,17 @@ import coo.questionnaire.Answer;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Class for create a panel for the text answers.
+ */
 public class TextAnswerPanel extends AnswerPanel {
     private JTextField answer;
 
+    /**
+     * Create a new panel for text answer.
+     *
+     * @param answer the answer who need a panel
+     */
     public TextAnswerPanel(Answer<?> answer) {
         super(answer);
     }
