@@ -2,6 +2,9 @@ package coo.questionnaire;
 
 import java.io.IOException;
 
+/**
+ * Class who launch the CLI application.
+ */
 public class QuestionnaireMain {
     public static void main(String[] args) {
         QuestionnaireFactory factory = new QuestionnaireFactory();

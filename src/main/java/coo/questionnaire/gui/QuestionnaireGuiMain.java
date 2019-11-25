@@ -18,6 +18,7 @@ import coo.questionnaire.*;
 
 public class QuestionnaireGuiMain {
     private JFrame f;
+    private int nbpoints;
 
     public QuestionnaireGuiMain() {
     }
@@ -36,7 +37,7 @@ public class QuestionnaireGuiMain {
         String file = "questionnairetest.txt";
         try {
             Questionnaire questionnaire = factory.createQuestionnaire(file);
-            questionnaire.askAllGui(pp);
+            nbpoints = questionnaire.askAllGui(pp);
 
         } catch (IOException except) {
             System.out.println(file + " : wrong file");
@@ -67,7 +68,7 @@ public class QuestionnaireGuiMain {
         }
 
         public void actionPerformed(ActionEvent e) {
-            JOptionPane.showMessageDialog(QuestionnaireGuiMain.this.f, "Here you can announce user's score...", "Finished !", 1);
+            JOptionPane.showMessageDialog(QuestionnaireGuiMain.this.f, "vous avez " + nbpoints + " points", "Finished !", 1);
         }
     }
 }

@@ -3,12 +3,25 @@ package coo.questionnaire;
 import coo.questionnaire.gui.AnswerPanel;
 import coo.questionnaire.gui.NumericalAnswerPanel;
 
+/**
+ * A number type answer.
+ */
 public class NumericalAnswer extends Answer<Integer> {
 
+    /**
+     * Create a new numerical answer.
+     *
+     * @param theGoodAnswer the good answer for the question as a int
+     */
     public NumericalAnswer(Integer theGoodAnswer) {
         super(theGoodAnswer);
     }
 
+    /**
+     * Create a new numerical answer.
+     *
+     * @param answerText the good answer for the question as a string
+     */
     public NumericalAnswer(String answerText) {
         this(Integer.parseInt(answerText));
     }
