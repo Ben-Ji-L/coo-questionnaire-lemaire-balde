@@ -4,3 +4,9 @@ Combien d'UE avons nous en L3 info ?
 Frodo est un Hobbit ?
 oui
 3
+Donnez le nom de l'un des hobbits de la Compagnie de l'Anneau ?
+Frodo ; Pippin ; Merry ; Sam
+1
+Comment s'appelle le poney qui accompagne la compagnie jusqu'a la Moria ?
+Bill | Bourricot | Robert | Jolly Jumper
+3

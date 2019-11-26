@@ -1,5 +1,9 @@
 package coo.questionnaire;
 
+import coo.questionnaire.gui.AnswerPanel;
+
+import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,8 +11,8 @@ import java.util.List;
 
 public class Questionnaire {
 
-    private List<Question> questions = new ArrayList();
-    private int nbPoints;
+    protected List<Question> questions = new ArrayList();
+    protected int nbPoints;
 
     public Questionnaire() {
 
@@ -52,4 +56,28 @@ public class Questionnaire {
         this.questions.add(questionToAdd);
     }
 
+    public int askAllGui(JPanel panel) {
+        this.nbPoints = 0;
+        Iterator it = this.questions.iterator();
+
+        while(it.hasNext()) {
+            Question quest = (Question) it.next();
+            JLabel label = new JLabel(quest.getQuestionText());
+            panel.add(label);
+
+            boolean valid = false;
+            String answer = null;
+
+            AnswerPanel answerPanel = quest.theGoodAnswer.createMyAnswerPanel();
+            panel.add(answerPanel.getPanel());
+
+            answer = answerPanel.getAnswerText();
+
+            if (quest.theGoodAnswer.isCorrect(answer)) {
+                nbPoints += quest.getNbOfPoints();
+            }
+        }
+
+        return nbPoints;
+    }
 }
