@@ -1,12 +1,9 @@
 Combien d'UE avons nous en L3 info ?
 6
 1
-Frodo est un Hobbit ?
+Mme Voge est elle notre responsable d'études ?
 oui
-3
-Donnez le nom de l'un des hobbits de la Compagnie de l'Anneau ?
-Frodo ; Pippin ; Merry ; Sam
 1
-Comment s'appelle le poney qui accompagne la compagnie jusqu'a la Moria ?
-Bill | Bourricot | Robert | Jolly Jumper
-3
+Donnez l'acronyme d'une des ue de la l3 info
+DPP | COO | PDS | ARO | AEL | COMEIT
+4
