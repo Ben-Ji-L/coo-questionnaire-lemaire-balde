@@ -1,6 +1,7 @@
 package coo.questionnaire;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 /**
@@ -8,7 +9,8 @@ import java.util.Scanner;
  */
 public class Input {
 
-    private static final Scanner scanner;
+    private static Scanner scanner;
+    public static final Input INPUT = new Input();
 
     static {
         scanner = new Scanner(System.in);
@@ -17,7 +19,7 @@ public class Input {
     /**
      * Create a new input class.
      */
-    public Input() {
+    private Input() {
     }
 
     /**
@@ -48,5 +50,14 @@ public class Input {
      */
     public static int readInt() throws IOException {
         return scanner.nextInt();
+    }
+
+    public void setIn(InputStream g) {
+        this.scanner = new Scanner(g);
+    }
+
+
+    public void setIntoStringIn() {
+        this.setIn(System.in);
     }
 }

@@ -13,7 +13,12 @@ public class TextAnswer extends Answer<String> {
     }
 
     public boolean accept(String s) {
-        return true;
+        try {
+            Integer.parseInt(s);
+            return false;
+        } catch (Exception var) {
+            return true;
+        }
     }
 
     public String instruction() {

@@ -1,9 +1,5 @@
 package coo.questionnaire;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
-
 public class YesNoAnswerTest extends AnswerTest {
 
 	@Override
