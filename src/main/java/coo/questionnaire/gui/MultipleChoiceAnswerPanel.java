@@ -1,6 +1,6 @@
 package coo.questionnaire.gui;
 
-import coo.questionnaire.MultipleChoiceAnswer;
+import coo.questionnaire.answer.MultipleChoiceAnswer;
 
 /**
  * Class for multiple answer in the gui.

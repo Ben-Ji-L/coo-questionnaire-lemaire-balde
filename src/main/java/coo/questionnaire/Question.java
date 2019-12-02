@@ -1,5 +1,7 @@
 package coo.questionnaire;
 
+import coo.questionnaire.answer.Answer;
+
 /**
  * Class for initialise and manage a question.
  */

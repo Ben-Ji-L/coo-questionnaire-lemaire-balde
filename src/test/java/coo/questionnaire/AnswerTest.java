@@ -6,11 +6,9 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import coo.questionnaire.Answer;
-import coo.questionnaire.Input;
+import coo.questionnaire.answer.Answer;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 public abstract class AnswerTest {

@@ -1,5 +1,7 @@
 package coo.questionnaire;
 
+import coo.questionnaire.answer.AnswerFactory;
+
 import java.io.*;
 
 /**

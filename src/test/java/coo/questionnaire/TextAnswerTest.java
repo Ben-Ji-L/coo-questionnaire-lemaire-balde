@@ -1,5 +1,8 @@
 package coo.questionnaire;
 
+import coo.questionnaire.answer.Answer;
+import coo.questionnaire.answer.TextAnswer;
+
 public class TextAnswerTest extends AnswerTest {
 
 	@Override

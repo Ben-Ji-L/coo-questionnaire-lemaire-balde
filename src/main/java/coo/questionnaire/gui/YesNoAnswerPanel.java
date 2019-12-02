@@ -1,7 +1,7 @@
 package coo.questionnaire.gui;
 
-import coo.questionnaire.YesNo;
-import coo.questionnaire.YesNoAnswer;
+import coo.questionnaire.answer.YesNo;
+import coo.questionnaire.answer.YesNoAnswer;
 
 import java.util.Arrays;
 

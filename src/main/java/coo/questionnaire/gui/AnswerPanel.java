@@ -1,6 +1,6 @@
 package coo.questionnaire.gui;
 
-import coo.questionnaire.Answer;
+import coo.questionnaire.answer.Answer;
 
 import javax.swing.*;
 

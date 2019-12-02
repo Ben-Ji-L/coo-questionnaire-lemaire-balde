@@ -1,4 +1,4 @@
-package coo.questionnaire;
+package coo.questionnaire.answer;
 
 import java.util.LinkedList;
 import java.util.List;

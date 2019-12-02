@@ -1,4 +1,4 @@
-package coo.questionnaire;
+package coo.questionnaire.answer;
 
 import coo.questionnaire.gui.AnswerPanel;
 import coo.questionnaire.gui.TextAnswerPanel;

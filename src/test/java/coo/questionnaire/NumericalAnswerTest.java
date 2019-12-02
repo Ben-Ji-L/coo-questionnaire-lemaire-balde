@@ -1,5 +1,8 @@
 package coo.questionnaire;
 
+import coo.questionnaire.answer.Answer;
+import coo.questionnaire.answer.NumericalAnswer;
+
 public class NumericalAnswerTest extends AnswerTest {
 
 
